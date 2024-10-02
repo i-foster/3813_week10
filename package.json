@@ -1,0 +1,15 @@
+{
+  "name": "3813_week10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "unitTest": "mocha ./unitTest/test.js",
+    "test": "mocha ./intergrationTest/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  }
+}
