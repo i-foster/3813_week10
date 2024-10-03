@@ -1,13 +1,23 @@
 var assert = require('assert'); //link in assertion library
+
+var tested = require("../linearPoint.js")
+
 describe('Tests for function one', () => {
-describe('Test Case 1 #fnOne()',() => {
-it('should return -1 when the value is not present', () => {
-assert.equal([1,2,3].indexOf(4), -1);
-});
-});
-describe('Test Case #fnOne()', () => {
-it('should return 3 as the value is present', () => {
-assert.equal([1,2,3,4,5].indexOf(4), 3);
-});
-});
+    describe('Test Case 1 #fnOne()',() => {
+        it('should return 6 with expected inputs', () => {
+            assert.equal(tested(2,1,4), 6);
+        });
+    });
+
+    describe('Test Case #fnOne()', () => {
+        it('should return 4 with a zero value', () => {
+            assert.equal(tested(2,0,4), 4);
+        });
+    });
+
+    describe('Test Case #fnOne()', () => {
+        it('should return 2 with a negative value', () => {
+            assert.equal(tested(2,-1,4), 2);
+        });
+    });
 });
